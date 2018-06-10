@@ -4,7 +4,7 @@
       <h1>Recycling</h1>
     </div>
     
-    <cell title="Title" value="Such a mass!"/>
+    <cell title="Title" value="Such a mess!"/>
     <popup-picker title="Type" :data="typeList" v-model="typeValue"></popup-picker>
     <x-input title="Donate(tokens)" is-type="number" placeholder=""></x-input>
 

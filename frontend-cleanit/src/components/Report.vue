@@ -19,9 +19,9 @@
     <x-input title="Address" is-type="text" :value='addr' placeholder="Input address here"></x-input>
 
     <!-- photo -->
-    <img style="width:100%;" src="static/ImgA0.jpg">
-    <img style="width:100%;" src="static/ImgA1.png">
-    <img style="width:100%;" src="static/ImgA2.jpg">
+    <img style="width:100%;" src="static/lese00.png">
+    <img style="width:100%;" src="static/lese01.png">
+    <img style="width:100%;" src="static/lese02.png">
     <x-button plain type="primary" style="border-radius:99px;">Append Photo</x-button>
     <div style="height:30px;"></div>
     <x-button @click.native="onClickReport" type="primary">Report</x-button>

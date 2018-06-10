@@ -5,7 +5,7 @@
     </div>
 
     <group title="Brief">
-      <cell title="Title" value="Such a mass!"/>
+      <cell title="Title" value="Such a mess!"/>
       <cell title="Address" value="Somewhere on earth"/>
     </group>
     

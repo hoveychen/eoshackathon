@@ -31,12 +31,12 @@ export default {
       list: [{
         src: 'static/Image00A00.png',
         fallbackSrc: 'http://placeholder.qiniudn.com/60x60/3cc51f/ffffff',
-        title: 'help clean here',
+        title: 'Help clean here',
         desc: 'Let\'s make this place clean!',
         url: '/component/cell'
       }, {
         src: 'static/Image00A01.png',
-        title: 'this must be done',
+        title: 'This must be done',
         desc: 'Let\'s make this place very clean!',
         url: {
           path: '/component/radio',
