@@ -1,2 +1,3 @@
 # eoshackathon
-contracts impls for project "cleankit"
+
+Our project is named "CleanIt", blahblahblah...
