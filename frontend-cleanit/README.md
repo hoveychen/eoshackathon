@@ -1,6 +1,8 @@
 # cleanit
 
-> A Vue.js project
+> An EOS hackerthon project
+
+Please refer to Index.vue and Report.vue for eos-related codes.
 
 ## Build Setup
 

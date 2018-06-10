@@ -23,10 +23,6 @@ export default {
   },
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
       msg: 'Hello World!',
       list: [{
         src: 'static/Image00A00.png',
@@ -77,6 +73,9 @@ export default {
     }
   },
   mounted: function() {
+    // ##########################################
+    // here we pull data from eos block chain
+    // ##########################################
     axios.post('http://192.168.99.100:8888/v1/chain/get_table_rows', {
       scope: 'tasks',
       code: 'cleanit',

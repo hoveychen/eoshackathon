@@ -33,7 +33,6 @@
 import { Group, Cell, XInput, XButton, Panel, XTextarea, PopupPicker } from 'vux'
 let EOS = require('eosjs');
 let eos = EOS({
-    // keyProvider: ['5JJRjo9XEft3snzcNkBgR8fjUPbXdt3tM5sRC83VfeXVnoEuPD3'],
     keyProvider: ['5KimBrRLNAnY8uXUg2VKKg3TBZKwpceZFGxqtZJ5D5MSzpWic91'],
     httpEndpoint: 'http://192.168.99.100:8888'
 });
@@ -49,10 +48,6 @@ export default {
   },
   data () {
     return {
-      // note: changing this line won't causes changes
-      // with hot-reload because the reloaded component
-      // preserves its current state and we are modifying
-      // its initial state.
       msg: 'Hello World!',
       addr: 'Mwwusel Silparyia Bvxvvu',
       typeList: [['None', 'Bottles', 'Misc', 'Bags']],
@@ -64,6 +59,11 @@ export default {
       console.log(item, $event)
     },
     onClickReport (e) {
+      // ##########################################
+      // here we call eos contract action
+      // ##########################################      
+      
+      // * This is another way of calling eos contract action
       // eos.contract('cleanit').then((contract) => {
       //   contract.report('11', "user11", {
       //     description: 'how dirty here is!',
@@ -77,6 +77,8 @@ export default {
       //     console.log(res)
       //   })
       // });
+      
+      // * And this is the manual way
       eos.transaction({
         actions: [
           {
